@@ -10,7 +10,7 @@ package commandshepelevich;
  */
 public class LightOnCommand implements Command {
     Light light;
-
+    
     public LightOnCommand(Light light) {
         this.light = light;
     }
@@ -20,4 +20,8 @@ public class LightOnCommand implements Command {
         light.on();
     }
     
+    @Override
+    public void undo() {
+        light.off();
+    }  
 }
