@@ -8,7 +8,7 @@ package commandshepelevich;
  *
  * @author Женя
  */
-public class LightOffCommand {
+public class LightOffCommand implements Command {
     Light light;
     
     public LightOffCommand(Light light) {
